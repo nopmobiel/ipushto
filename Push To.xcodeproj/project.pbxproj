@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* OrientationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OrientationAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* OrientationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* OrientationViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* OrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* OrientationViewController.m */; };
+		AE0F3C2212F9593900D45DF6 /* MessierZoekFormulierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0F3C2012F9593900D45DF6 /* MessierZoekFormulierViewController.m */; };
+		AE0F3C2312F9593900D45DF6 /* MessierZoekFormulierViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0F3C2112F9593900D45DF6 /* MessierZoekFormulierViewController.xib */; };
+		AE17AF791345CA07009E07B2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE17AF781345CA07009E07B2 /* CoreMotion.framework */; };
+		AE17AFF71345D641009E07B2 /* Reflection.png in Resources */ = {isa = PBXBuildFile; fileRef = AE17AFEF1345D641009E07B2 /* Reflection.png */; };
+		AE78D5ED12F9A86400A459C8 /* 151-telescope.png in Resources */ = {isa = PBXBuildFile; fileRef = AE78D5EC12F9A86400A459C8 /* 151-telescope.png */; };
+		AE94EEB113A5FD1A00D2312E /* alignment.png in Resources */ = {isa = PBXBuildFile; fileRef = AE94EEB013A5FD1A00D2312E /* alignment.png */; };
+		AE94EEB313A5FD3600D2312E /* custom.png in Resources */ = {isa = PBXBuildFile; fileRef = AE94EEB213A5FD3600D2312E /* custom.png */; };
+		AEC021DC12F97648004FD467 /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC021DB12F97648004FD467 /* MySingleton.m */; };
+		AED1391212E9BA6700485B82 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED1391112E9BA6700485B82 /* CoreLocation.framework */; };
+		AED1392612E9BC7700485B82 /* MyCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED1392512E9BC7700485B82 /* MyCLController.m */; };
+		AEE3ABDA1306E2BF00812B28 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE3ABD91306E2BF00812B28 /* MainWindow-iPad.xib */; };
+		AEE3ABDF1306E34700812B28 /* MessierZoekFormulierViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE3ABDE1306E34700812B28 /* MessierZoekFormulierViewController-iPad.xib */; };
+		AEE3ABE31306E36D00812B28 /* OrientationViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE3ABE21306E36D00812B28 /* OrientationViewController-iPad.xib */; };
+		AEE3AC1B1306E93300812B28 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE3AC181306E93300812B28 /* left_arrow.png */; };
+		AEE3AC1C1306E93300812B28 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE3AC191306E93300812B28 /* right_arrow.png */; };
+		AEE3AC1D1306E93300812B28 /* up_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE3AC1A1306E93300812B28 /* up_arrow.png */; };
+		AEE3AC1F1306E98000812B28 /* down_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE3AC1E1306E98000812B28 /* down_arrow.png */; };
+		AEE3AC461306EC8400812B28 /* bullseye.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE3AC451306EC8400812B28 /* bullseye.png */; };
+		F06BE23A15121FB4003B5AC4 /* catalogus.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F06BE23815121F8C003B5AC4 /* catalogus.sqlite */; };
+		F06BE23F151222A5003B5AC4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F06BE23D1512222C003B5AC4 /* libsqlite3.dylib */; };
+		F06BE241151222F9003B5AC4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06BE240151222F9003B5AC4 /* CoreData.framework */; };
+		F06BE2451512234A003B5AC4 /* catalogus.m in Sources */ = {isa = PBXBuildFile; fileRef = F06BE2441512234A003B5AC4 /* catalogus.m */; };
+		F06BE24E151330B6003B5AC4 /* NGCZoekFormulierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06BE24C151330B6003B5AC4 /* NGCZoekFormulierViewController.m */; };
+		F06BE24F151330B6003B5AC4 /* NGCZoekFormulierViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06BE24D151330B6003B5AC4 /* NGCZoekFormulierViewController.xib */; };
+		F06F883B1519C61B001316C7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F883A1519C61B001316C7 /* CoreAudio.framework */; };
+		F06F883E1519C641001316C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F883D1519C641001316C7 /* QuartzCore.framework */; };
+		F06F88401519C65E001316C7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F883F1519C65E001316C7 /* MediaPlayer.framework */; };
+		F06F88421519EA52001316C7 /* NGCZoekFormulierViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06F88411519EA52001316C7 /* NGCZoekFormulierViewController-iPad.xib */; };
+		F091923C1500F03B0041F853 /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = F091923B1500F03B0041F853 /* mount.png */; };
+		F0AA6D8B1500B3E300C62DC4 /* 151-telescope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AA6D8A1500B3E300C62DC4 /* 151-telescope@2x.png */; };
+		F0AA6D901500B4AF00C62DC4 /* customViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AA6D8E1500B4AF00C62DC4 /* customViewController.m */; };
+		F0AA6D911500B4AF00C62DC4 /* customViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0AA6D8F1500B4AF00C62DC4 /* customViewController.xib */; };
+		F0AA6D941500BB8B00C62DC4 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AA6D921500BB8B00C62DC4 /* 07-map-marker.png */; };
+		F0AA6D951500BB8B00C62DC4 /* 07-map-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AA6D931500BB8B00C62DC4 /* 07-map-marker@2x.png */; };
+		F0AA6D981500BBB200C62DC4 /* 06-magnify.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AA6D961500BBB200C62DC4 /* 06-magnify.png */; };
+		F0AA6D991500BBB200C62DC4 /* 06-magnify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AA6D971500BBB200C62DC4 /* 06-magnify@2x.png */; };
+		F0AA6DA01500BCEA00C62DC4 /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AA6D9F1500BCEA00C62DC4 /* GradientButton.m */; };
+		F0BE02BB1500DC5E00C1B787 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F0BE02BA1500DC5E00C1B787 /* Settings.bundle */; };
+		F0BE02BF1500E31A00C1B787 /* customViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0BE02BE1500E31A00C1B787 /* customViewController-iPad.xib */; };
+		FE13042716FC75E7005661F5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13041D16FC75E7005661F5 /* Icon-72.png */; };
+		FE13042816FC75E7005661F5 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13041E16FC75E7005661F5 /* Icon-72@2x.png */; };
+		FE13042916FC75E7005661F5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13041F16FC75E7005661F5 /* Icon-Small-50.png */; };
+		FE13042A16FC75E7005661F5 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13042016FC75E7005661F5 /* Icon-Small-50@2x.png */; };
+		FE13042B16FC75E7005661F5 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13042116FC75E7005661F5 /* Icon-Small.png */; };
+		FE13042C16FC75E7005661F5 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13042216FC75E7005661F5 /* Icon-Small@2x.png */; };
+		FE13042D16FC75E7005661F5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13042316FC75E7005661F5 /* Icon.png */; };
+		FE13042E16FC75E7005661F5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13042416FC75E7005661F5 /* Icon@2x.png */; };
+		FE13042F16FC75E7005661F5 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = FE13042516FC75E7005661F5 /* iTunesArtwork */; };
+		FE13043016FC75E7005661F5 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = FE13042616FC75E7005661F5 /* iTunesArtwork@2x */; };
+		FE13043216FC76AD005661F5 /* Cadeau - iPushTo - Background - iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = FE13043116FC76AD005661F5 /* Cadeau - iPushTo - Background - iPhone5.png */; };
+		FECD9993167A45CC00E99712 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FECD9992167A45CC00E99712 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* OrientationAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* OrientationAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Push To.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push To.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* OrientationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OrientationViewController.xib; path = ../OrientationViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* OrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* OrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrientationViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Push To_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Push To_Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Push To-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Push To-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AE0F3C1F12F9593900D45DF6 /* MessierZoekFormulierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessierZoekFormulierViewController.h; sourceTree = "<group>"; };
+		AE0F3C2012F9593900D45DF6 /* MessierZoekFormulierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessierZoekFormulierViewController.m; sourceTree = "<group>"; };
+		AE0F3C2112F9593900D45DF6 /* MessierZoekFormulierViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessierZoekFormulierViewController.xib; sourceTree = "<group>"; };
+		AE17AF781345CA07009E07B2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AE17AFEF1345D641009E07B2 /* Reflection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reflection.png; sourceTree = "<group>"; };
+		AE78D5EC12F9A86400A459C8 /* 151-telescope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "151-telescope.png"; sourceTree = "<group>"; };
+		AE94EEB013A5FD1A00D2312E /* alignment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alignment.png; sourceTree = "<group>"; };
+		AE94EEB213A5FD3600D2312E /* custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = custom.png; sourceTree = "<group>"; };
+		AEC021DA12F97648004FD467 /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
+		AEC021DB12F97648004FD467 /* MySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySingleton.m; sourceTree = "<group>"; };
+		AED1391112E9BA6700485B82 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AED1392512E9BC7700485B82 /* MyCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCLController.m; sourceTree = "<group>"; };
+		AEE3ABD91306E2BF00812B28 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		AEE3ABDE1306E34700812B28 /* MessierZoekFormulierViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MessierZoekFormulierViewController-iPad.xib"; sourceTree = "<group>"; };
+		AEE3ABE21306E36D00812B28 /* OrientationViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "OrientationViewController-iPad.xib"; sourceTree = "<group>"; };
+		AEE3AC181306E93300812B28 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		AEE3AC191306E93300812B28 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		AEE3AC1A1306E93300812B28 /* up_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow.png; sourceTree = "<group>"; };
+		AEE3AC1E1306E98000812B28 /* down_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow.png; sourceTree = "<group>"; };
+		AEE3AC451306EC8400812B28 /* bullseye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullseye.png; sourceTree = "<group>"; };
+		F06BE23815121F8C003B5AC4 /* catalogus.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = catalogus.sqlite; path = Classes/catalogus.sqlite; sourceTree = "<group>"; };
+		F06BE23D1512222C003B5AC4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F06BE240151222F9003B5AC4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F06BE2431512234A003B5AC4 /* catalogus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogus.h; sourceTree = "<group>"; };
+		F06BE2441512234A003B5AC4 /* catalogus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogus.m; sourceTree = "<group>"; };
+		F06BE24B151330B6003B5AC4 /* NGCZoekFormulierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGCZoekFormulierViewController.h; sourceTree = "<group>"; };
+		F06BE24C151330B6003B5AC4 /* NGCZoekFormulierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGCZoekFormulierViewController.m; sourceTree = "<group>"; };
+		F06BE24D151330B6003B5AC4 /* NGCZoekFormulierViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NGCZoekFormulierViewController.xib; sourceTree = "<group>"; };
+		F06F883A1519C61B001316C7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F06F883D1519C641001316C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F06F883F1519C65E001316C7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F06F88411519EA52001316C7 /* NGCZoekFormulierViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NGCZoekFormulierViewController-iPad.xib"; sourceTree = "<group>"; };
+		F091923B1500F03B0041F853 /* mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mount.png; sourceTree = "<group>"; };
+		F0AA6D8A1500B3E300C62DC4 /* 151-telescope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "151-telescope@2x.png"; sourceTree = "<group>"; };
+		F0AA6D8D1500B4AF00C62DC4 /* customViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customViewController.h; sourceTree = "<group>"; };
+		F0AA6D8E1500B4AF00C62DC4 /* customViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customViewController.m; sourceTree = "<group>"; };
+		F0AA6D8F1500B4AF00C62DC4 /* customViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customViewController.xib; sourceTree = "<group>"; };
+		F0AA6D921500BB8B00C62DC4 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "Classes/07-map-marker.png"; sourceTree = "<group>"; };
+		F0AA6D931500BB8B00C62DC4 /* 07-map-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker@2x.png"; path = "Classes/07-map-marker@2x.png"; sourceTree = "<group>"; };
+		F0AA6D961500BBB200C62DC4 /* 06-magnify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "06-magnify.png"; path = "Classes/06-magnify.png"; sourceTree = "<group>"; };
+		F0AA6D971500BBB200C62DC4 /* 06-magnify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "06-magnify@2x.png"; path = "Classes/06-magnify@2x.png"; sourceTree = "<group>"; };
+		F0AA6D9E1500BCEA00C62DC4 /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
+		F0AA6D9F1500BCEA00C62DC4 /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		F0BE02BA1500DC5E00C1B787 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F0BE02BE1500E31A00C1B787 /* customViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "customViewController-iPad.xib"; sourceTree = "<group>"; };
+		FE13041D16FC75E7005661F5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		FE13041E16FC75E7005661F5 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		FE13041F16FC75E7005661F5 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		FE13042016FC75E7005661F5 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		FE13042116FC75E7005661F5 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		FE13042216FC75E7005661F5 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		FE13042316FC75E7005661F5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FE13042416FC75E7005661F5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FE13042516FC75E7005661F5 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		FE13042616FC75E7005661F5 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		FE13043116FC76AD005661F5 /* Cadeau - iPushTo - Background - iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cadeau - iPushTo - Background - iPhone5.png"; sourceTree = "<group>"; };
+		FECD9992167A45CC00E99712 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06F88401519C65E001316C7 /* MediaPlayer.framework in Frameworks */,
+				F06F883E1519C641001316C7 /* QuartzCore.framework in Frameworks */,
+				F06F883B1519C61B001316C7 /* CoreAudio.framework in Frameworks */,
+				F06BE241151222F9003B5AC4 /* CoreData.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				AED1391212E9BA6700485B82 /* CoreLocation.framework in Frameworks */,
+				AE17AF791345CA07009E07B2 /* CoreMotion.framework in Frameworks */,
+				F06BE23F151222A5003B5AC4 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F0BE02BD1500E24200C1B787 /* ext */,
+				1D3623240D0F684500981E51 /* OrientationAppDelegate.h */,
+				1D3623250D0F684500981E51 /* OrientationAppDelegate.m */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				28D7ACF60DDB3853001CB0EB /* OrientationViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* OrientationViewController.m */,
+				2899E5210DE3E06400AC0155 /* OrientationViewController.xib */,
+				AE0F3C1F12F9593900D45DF6 /* MessierZoekFormulierViewController.h */,
+				AE0F3C2012F9593900D45DF6 /* MessierZoekFormulierViewController.m */,
+				AE0F3C2112F9593900D45DF6 /* MessierZoekFormulierViewController.xib */,
+				F06BE24B151330B6003B5AC4 /* NGCZoekFormulierViewController.h */,
+				F06BE24C151330B6003B5AC4 /* NGCZoekFormulierViewController.m */,
+				F06BE24D151330B6003B5AC4 /* NGCZoekFormulierViewController.xib */,
+				F0AA6D8D1500B4AF00C62DC4 /* customViewController.h */,
+				F0AA6D8E1500B4AF00C62DC4 /* customViewController.m */,
+				F0AA6D8F1500B4AF00C62DC4 /* customViewController.xib */,
+				AEC021DA12F97648004FD467 /* MySingleton.h */,
+				AEC021DB12F97648004FD467 /* MySingleton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Push To.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F0BE02BC1500E22D00C1B787 /* icons */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				AEE3ABD81306E2BF00812B28 /* Resources-iPad */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				F0BE02BA1500DC5E00C1B787 /* Settings.bundle */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Push To_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F06BE23815121F8C003B5AC4 /* catalogus.sqlite */,
+				8D1107310486CEB800E47090 /* Push To-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06BE23D1512222C003B5AC4 /* libsqlite3.dylib */,
+				F06F883F1519C65E001316C7 /* MediaPlayer.framework */,
+				F06F883D1519C641001316C7 /* QuartzCore.framework */,
+				F06F883A1519C61B001316C7 /* CoreAudio.framework */,
+				F06BE240151222F9003B5AC4 /* CoreData.framework */,
+				AE17AF781345CA07009E07B2 /* CoreMotion.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				AED1391112E9BA6700485B82 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEE3ABD81306E2BF00812B28 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				AEE3ABD91306E2BF00812B28 /* MainWindow-iPad.xib */,
+				AEE3ABE21306E36D00812B28 /* OrientationViewController-iPad.xib */,
+				F0BE02BE1500E31A00C1B787 /* customViewController-iPad.xib */,
+				F06F88411519EA52001316C7 /* NGCZoekFormulierViewController-iPad.xib */,
+				AEE3ABDE1306E34700812B28 /* MessierZoekFormulierViewController-iPad.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		F0BE02BC1500E22D00C1B787 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				FECD9992167A45CC00E99712 /* Default-568h@2x.png */,
+				F091923B1500F03B0041F853 /* mount.png */,
+				AE17AFEF1345D641009E07B2 /* Reflection.png */,
+				AEE3AC451306EC8400812B28 /* bullseye.png */,
+				AEE3AC1E1306E98000812B28 /* down_arrow.png */,
+				AEE3AC181306E93300812B28 /* left_arrow.png */,
+				F0AA6D8A1500B3E300C62DC4 /* 151-telescope@2x.png */,
+				AEE3AC191306E93300812B28 /* right_arrow.png */,
+				FE13041D16FC75E7005661F5 /* Icon-72.png */,
+				FE13041E16FC75E7005661F5 /* Icon-72@2x.png */,
+				FE13041F16FC75E7005661F5 /* Icon-Small-50.png */,
+				FE13042016FC75E7005661F5 /* Icon-Small-50@2x.png */,
+				FE13042116FC75E7005661F5 /* Icon-Small.png */,
+				FE13043116FC76AD005661F5 /* Cadeau - iPushTo - Background - iPhone5.png */,
+				FE13042216FC75E7005661F5 /* Icon-Small@2x.png */,
+				FE13042316FC75E7005661F5 /* Icon.png */,
+				FE13042416FC75E7005661F5 /* Icon@2x.png */,
+				FE13042516FC75E7005661F5 /* iTunesArtwork */,
+				FE13042616FC75E7005661F5 /* iTunesArtwork@2x */,
+				AEE3AC1A1306E93300812B28 /* up_arrow.png */,
+				AE94EEB213A5FD3600D2312E /* custom.png */,
+				AE94EEB013A5FD1A00D2312E /* alignment.png */,
+				AE78D5EC12F9A86400A459C8 /* 151-telescope.png */,
+				F0AA6D961500BBB200C62DC4 /* 06-magnify.png */,
+				F0AA6D971500BBB200C62DC4 /* 06-magnify@2x.png */,
+				F0AA6D921500BB8B00C62DC4 /* 07-map-marker.png */,
+				F0AA6D931500BB8B00C62DC4 /* 07-map-marker@2x.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		F0BE02BD1500E24200C1B787 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				F06BE2431512234A003B5AC4 /* catalogus.h */,
+				F06BE2441512234A003B5AC4 /* catalogus.m */,
+				F0AA6D9E1500BCEA00C62DC4 /* GradientButton.h */,
+				AED1392512E9BC7700485B82 /* MyCLController.m */,
+				F0AA6D9F1500BCEA00C62DC4 /* GradientButton.m */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Push To */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Push To" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Push To";
+			productName = Orientation;
+			productReference = 1D6058910D05DD3D006BFB54 /* Push To.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = DDQ;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Push To" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Push To */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* OrientationViewController.xib in Resources */,
+				AE0F3C2312F9593900D45DF6 /* MessierZoekFormulierViewController.xib in Resources */,
+				AE78D5ED12F9A86400A459C8 /* 151-telescope.png in Resources */,
+				AEE3ABDA1306E2BF00812B28 /* MainWindow-iPad.xib in Resources */,
+				AEE3ABDF1306E34700812B28 /* MessierZoekFormulierViewController-iPad.xib in Resources */,
+				AEE3ABE31306E36D00812B28 /* OrientationViewController-iPad.xib in Resources */,
+				AEE3AC1B1306E93300812B28 /* left_arrow.png in Resources */,
+				AEE3AC1C1306E93300812B28 /* right_arrow.png in Resources */,
+				AEE3AC1D1306E93300812B28 /* up_arrow.png in Resources */,
+				AEE3AC1F1306E98000812B28 /* down_arrow.png in Resources */,
+				AEE3AC461306EC8400812B28 /* bullseye.png in Resources */,
+				AE17AFF71345D641009E07B2 /* Reflection.png in Resources */,
+				AE94EEB113A5FD1A00D2312E /* alignment.png in Resources */,
+				AE94EEB313A5FD3600D2312E /* custom.png in Resources */,
+				F0AA6D8B1500B3E300C62DC4 /* 151-telescope@2x.png in Resources */,
+				F0AA6D911500B4AF00C62DC4 /* customViewController.xib in Resources */,
+				F0AA6D941500BB8B00C62DC4 /* 07-map-marker.png in Resources */,
+				F0AA6D951500BB8B00C62DC4 /* 07-map-marker@2x.png in Resources */,
+				F0AA6D981500BBB200C62DC4 /* 06-magnify.png in Resources */,
+				F0AA6D991500BBB200C62DC4 /* 06-magnify@2x.png in Resources */,
+				F0BE02BB1500DC5E00C1B787 /* Settings.bundle in Resources */,
+				F0BE02BF1500E31A00C1B787 /* customViewController-iPad.xib in Resources */,
+				F091923C1500F03B0041F853 /* mount.png in Resources */,
+				F06BE23A15121FB4003B5AC4 /* catalogus.sqlite in Resources */,
+				F06BE24F151330B6003B5AC4 /* NGCZoekFormulierViewController.xib in Resources */,
+				F06F88421519EA52001316C7 /* NGCZoekFormulierViewController-iPad.xib in Resources */,
+				FECD9993167A45CC00E99712 /* Default-568h@2x.png in Resources */,
+				FE13042716FC75E7005661F5 /* Icon-72.png in Resources */,
+				FE13042816FC75E7005661F5 /* Icon-72@2x.png in Resources */,
+				FE13042916FC75E7005661F5 /* Icon-Small-50.png in Resources */,
+				FE13042A16FC75E7005661F5 /* Icon-Small-50@2x.png in Resources */,
+				FE13042B16FC75E7005661F5 /* Icon-Small.png in Resources */,
+				FE13042C16FC75E7005661F5 /* Icon-Small@2x.png in Resources */,
+				FE13042D16FC75E7005661F5 /* Icon.png in Resources */,
+				FE13042E16FC75E7005661F5 /* Icon@2x.png in Resources */,
+				FE13042F16FC75E7005661F5 /* iTunesArtwork in Resources */,
+				FE13043016FC75E7005661F5 /* iTunesArtwork@2x in Resources */,
+				FE13043216FC76AD005661F5 /* Cadeau - iPushTo - Background - iPhone5.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* OrientationAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* OrientationViewController.m in Sources */,
+				AED1392612E9BC7700485B82 /* MyCLController.m in Sources */,
+				AE0F3C2212F9593900D45DF6 /* MessierZoekFormulierViewController.m in Sources */,
+				AEC021DC12F97648004FD467 /* MySingleton.m in Sources */,
+				F0AA6D901500B4AF00C62DC4 /* customViewController.m in Sources */,
+				F0AA6DA01500BCEA00C62DC4 /* GradientButton.m in Sources */,
+				F06BE2451512234A003B5AC4 /* catalogus.m in Sources */,
+				F06BE24E151330B6003B5AC4 /* NGCZoekFormulierViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norbert Schmidt (5ETE5VMV5Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norbert Schmidt (5ETE5VMV5Y)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Push To_Prefix.pch";
+				INFOPLIST_FILE = "Push To-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Push To";
+				PROVISIONING_PROFILE = "638D4ABA-E5CB-4E42-86A9-245E3BD111F3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "638D4ABA-E5CB-4E42-86A9-245E3BD111F3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norbert Schmidt (5ETE5VMV5Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norbert Schmidt (5ETE5VMV5Y)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Push To_Prefix.pch";
+				INFOPLIST_FILE = "Push To-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Push To";
+				PROVISIONING_PROFILE = "638D4ABA-E5CB-4E42-86A9-245E3BD111F3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "638D4ABA-E5CB-4E42-86A9-245E3BD111F3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AED840C512FAF51C003CC4F0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DDQ";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "Push To";
+				PROVISIONING_PROFILE = "2E6BCD69-0D6E-4F5B-9C4C-0B67614D4954";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		AED840C612FAF51C003CC4F0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norbert Schmidt (5ETE5VMV5Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norbert Schmidt (5ETE5VMV5Y)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Push To_Prefix.pch";
+				INFOPLIST_FILE = "Push To-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Push To";
+				PROVISIONING_PROFILE = "638D4ABA-E5CB-4E42-86A9-245E3BD111F3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "638D4ABA-E5CB-4E42-86A9-245E3BD111F3";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DDQ";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "Push To";
+				PROVISIONING_PROFILE = "2E6BCD69-0D6E-4F5B-9C4C-0B67614D4954";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DDQ";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "Push To";
+				PROVISIONING_PROFILE = "2E6BCD69-0D6E-4F5B-9C4C-0B67614D4954";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Push To" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				AED840C612FAF51C003CC4F0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Push To" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				AED840C512FAF51C003CC4F0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
